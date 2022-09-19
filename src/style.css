@@ -1,0 +1,889 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+p,ul{
+    margin-bottom: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: #F4F4F4;
+}
+.opening{
+    height: 30px;
+    background-color: #F2F2F2;
+}
+.opening li{
+    margin-left: 10px;
+}
+/* header */
+header{
+    width: 100%;
+    height: 60px;
+}
+header .menu{
+    display: none;
+}
+.app-logo{
+    height: 30px;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    background-color: #FFB342;
+    border-radius: 90px;
+}
+
+.contact-title .title{
+    font-size: 14px;
+}
+
+.contact-title .email{
+    font-size: 12px;
+}
+
+/* navbar */
+.navbor{
+    height: 20px;
+}
+nav{
+    height:  40px;
+    background-color: #FFB342;
+    box-shadow: 0px 10px 10px rgba(97, 97, 97, 0.2);
+}
+nav button{
+    height:100%;
+    background: #1C2752;
+    color: white;
+    border: none;
+    padding:0 15px;
+    font-size: 13px;
+}
+nav .active{
+    color: white;
+}
+nav ul li{
+    margin: 0 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+/* intro */
+.intro{
+    width: 100vw;
+    height: calc(100vh - 110px);
+    background-image: url("./img/img/IMAGEheader.png");
+    background-size: cover;
+    color: white;
+}
+.intro .shadow{
+    display: flex;
+    align-self: flex-start;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0 20px;
+}
+.intro h1{
+    width: 55%;
+    margin: 15px 0;
+    word-wrap: break-word;
+}
+.intro button,.main-services .left button{
+    width: 200px;
+    height: 50px;
+    background: #FFB342;
+    border: 2px solid #FFB342
+}
+/* BlueCollor */
+.BlueCollor{
+    width: 100vw;
+    height: 100vh;
+}
+.BlueCollor .title ,.main-services .title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 58px;
+    letter-spacing: 0.36px;
+    color: #1C2752;
+}
+.BlueCollor .shadow,.main-services .shadow,.our-services .shadow,.customer .shadow .update .shadow{
+    align-self: flex-start;
+    background: rgba(153, 153, 153, 0.2);
+    padding: 0 20px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.BlueCollor .box{
+    background-color: #F4F4F4;
+    text-align: center;
+}
+.BlueCollor .box h1{
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 88px;
+    text-align: center;
+    letter-spacing: 0.36px;
+    color: #FFB342;
+}
+/* servoces */
+.main-services{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFB342;
+}
+.main-services .shadow{
+    background-color: #F2F2F2;
+    padding: 0 20px;
+}
+.our-services .shadow img{
+    width: 20px;
+}
+.main-services .header, .our-services .header{
+    min-height: 35%; 
+}
+.main-services .header button{    
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    padding: 10px 40px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-services .body{
+    height: 30%;
+    width: 100%;
+}
+.main-services .body-card{
+    width: 100%;
+    height: 200%;
+    padding: 5%;
+    background-color: #ffffff;
+}
+.main-services .left{
+    width: 70%;
+    height: 100%;
+}
+.main-services .right{
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+}
+.main-services .header .buttons{
+    font-size: 14px;
+}
+.main-services .header .active{
+    background-color: white;
+}
+/* our-services */
+
+.our-services{
+    height: auto;
+    margin-top: 15%;
+}
+.our-services .shadow,.resnet-project .shadow ,.price .shadow .choose-us .right .shadow{
+    background-color: #ffffff;
+    padding: 0 20px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.our-services .body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+}
+.our-services-card{
+    margin: 10px;
+    height: 300px;
+    background-color: #1C2752;
+    padding: 25px;
+}
+.our-services-card h5{
+    color: #FFB342;
+}
+.our-services-card button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    align-self: flex-start;
+}
+/* choose-us */
+.choose-us{
+    min-height: 100vh;
+    width: 100vw;
+    margin-top: 10%;
+}
+.choose-us .left{
+    margin: auto;
+}
+.choose-us .card{
+    border: none;
+    border-radius: 0;
+    background-color: #1C2752;
+    color: white;
+    padding: 60px 0;
+}
+.choose-us li{
+    width: 100%;
+    margin: 5px 0;
+}
+.choose-us .count{
+    background-color: #FFB342;
+    padding: 10px;
+}
+.choose-us .title{
+    padding: 10px;
+    border: 1px solid #F2F2F2;
+}
+.choose-us .left{
+    background-position: center;
+    background-size: cover;
+}
+/* resnt-project */
+.resnet-project{
+    height: 100vh;
+    background: #1C2752;
+}
+
+.resnet-project .row{
+    --bs-gutter-x:0;
+}
+.resnet-project .cards{
+    display: flex;
+}
+.resnet-project .cards .card{
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 0%;
+}
+.resnet-project .cards .card img{
+    object-fit: cover;
+    object-position: center;
+}
+/* customer */
+.customer{
+    background-color: #ffffff;
+}
+.customer .network .shadow{
+    background: #F4F4F4;
+}
+.customer .testimonial ,.customer .meet{
+    min-height: 500px;
+}
+.customer .testimonial .card{
+    border-radius: 0%;
+}
+.customer .testimonial .card img{
+    width: 50px;
+    height: 50px;
+}
+.customer .testimonial .card .header .text-secondary{
+    font-size: 12px;
+}
+.customer .testimonial .card .icon-circle{
+    width: 35px;
+    height: 35px;
+    background-color: #FFB342;
+    border-radius: 90px;
+}
+.customer .testimonial .card .body{
+    font-size: 14px;
+    font-weight: 600;
+}
+.customer .testimonial .card .body b{
+    color: #1C2752;
+}
+.customer .testimonial .card .footer button{
+    width: 35px;
+    height: 35px;
+    background-color: #F2F2F2;
+    border-radius: 90px;
+    border: none;
+}
+.questions-card{
+    background: #FFB342;
+}
+.questions-card .main{
+    font-size: 13px;
+}
+.questions-card .phone .icon{
+    width: 35px;
+    height: 35px;
+    background-color: #F2F2F2;
+    border-radius: 90px;
+    border: none;
+}
+.meet .form{
+    min-height: 100px;
+}
+.meet .form button{
+    height: 40px;
+    border: none;
+    background-color: #FFB342;
+    font-size: 13px;
+}
+.client .shadow{
+    align-self: center;
+    justify-content: space-between;
+}
+.customer .client{
+    margin-top: 60px;
+}
+/* price */
+.price{
+    width: 100vw;
+}
+.price .shadow{
+    align-self: flex-start;
+}
+.price .left{
+    width: 40%;
+    word-wrap: break-word;
+}
+.price .left h3{
+    color: #1C2752;
+}
+.price .card{
+    border: none;
+    border-radius: 0;
+}
+.price .cards .header .tarif-title{
+    color: #1C2752;
+    font-weight: 600;
+    font-size: 18px;
+}
+.price .cards .header .visit-text{
+    font-size: 11px;
+}
+
+.footer button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 14px;
+    background-color: #FFB342;
+}
+/* update */
+.update{
+    background-color: white;
+    padding: 60px 0;
+}
+.update .shadow{
+    font-size: 14px;
+}
+.update .worker-info{
+    height: 35px;
+    width: 50%;
+    padding: 10px;
+    font-size: 11px;
+    transform: translateY(-50%);
+    background-color: #FFB342;
+    color: #1C2752;
+}
+.update .worker-sector button{
+    border: none;
+    color: rgb(65, 65, 65);
+    background-color: transparent;
+    font-size: 15px;
+}
+/* subcribe */
+.subscribe{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #FFB342;
+    padding-top: 50px;
+}
+.subscribe .left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.subscribe .subscribe-submit{
+    border: 1px solid white;
+    height: 40px;
+    display: flex;
+}
+.subscribe .email-input{
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+}
+.subscribe .subscribe-submit button{
+    height: 100%;
+    padding: 0px 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border: none;
+}
+footer{
+    background-color: #1C2752;
+    color: white;
+}
+footer .header{
+    min-height: 50px;
+}
+footer .header .circle{
+    width: 50px;
+    height: 50px;
+}
+footer .header li .circle img{
+    width: 19px;
+}
+footer .main .circle{
+    background: #2C3765;
+}
+footer .row .left{
+    position: relative;
+}
+footer .row .left .massanger{
+    position: absolute;
+    bottom: 0;
+}
+footer .main{
+    position: relative;
+}
+footer .main ul li{
+    margin: 5px 0;
+}
+footer .main ul li:nth-child(1){
+    color: #FFB342;
+}
+@media (max-width:992px){
+    .navbor nav ul li a,.navbor nav button{
+        font-size: 14px;
+    }
+    .intro h1{
+        font-size: 22px;
+    }
+    .intro button,.main-services .read-more-btn{
+        width: 150px;
+        height: 40px;
+    }
+    .intro .shadow ,.BlueCollor .shadow ,.main-services .shadow,.our-services .shadow, .choose-us .shadow{
+        height: 20px;
+        font-size: 12px;
+    }
+    .BlueCollor .shadow img,.main-services .shadow img,.our-services .shadow img{
+        width: 16px;
+        margin-right: 10px;
+    }
+    .BlueCollor .title,.main-services .title, .our-services .title ,.choose-us .title{
+        font-size: 20px;
+    }
+    .BlueCollor .main,.main-services .main,.choose-us .main{
+        font-size: 12px;
+    }
+    .BlueCollor .info{
+        font-size: 13px;
+    }
+    .main-services .body-card{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-services .body .right{
+        width: 50%;
+    }
+    .main-services .body .right img{
+        object-fit: cover;
+    }
+    .main-services .left{
+        width: 60%;
+    }
+    .our-services{
+        margin-top: 20%;
+    }
+
+    .our-services .body {
+        grid-template-columns: 1fr 1fr;
+    }
+    .our-services .body .icon img{
+        width: 30px;
+    }
+    .choose-us .container{
+        flex-direction: column;
+    }
+    .choose-us .left{
+        margin: auto;
+        width: 100% !important
+    }
+    .choose-us .right{
+        width: 100% !important;
+    }
+    .choose-us .title{
+        margin: auto;
+    }
+    .choose-us .shadow{
+        margin: auto;
+    }
+    .choose-us ul{
+        margin-top: 10px;
+    }
+    /* customer */
+    .customer .icons .icon img{
+        width: 100%;
+    }
+    .customer .phone .icon{
+        margin-right: 1rem !important;
+    }
+    .customer .phone .phone-number{
+        font-size: 1em !important;
+        word-wrap: break-word;
+    }
+    .resnet-project .cards{
+        padding: 0 10px;
+    }
+    .update .worker-sector .worker-info{
+        width: 90%;
+    }
+    footer .header{
+        font-size: 14px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    footer .header li:nth-child(1){
+        width: 150px;
+        height: 40px;
+    }
+    footer .header .circle{
+        width: 40px;
+        height: 40px;
+    }
+    footer .massanger{
+        margin: 0 !important;
+        width: 100%;
+    }
+    footer .massanger .circle{
+        padding: 5px;
+        width: auto;
+        height: auto;
+    }
+    footer .second{
+        justify-content: space-between !important;
+    }
+    footer .second ul{
+        width: 45%;
+    }
+}
+@media (max-width:576px) {
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 4;
+        background-color: #57575770;
+        box-shadow:0px 5px 10px #35353570;
+    }
+    header .contact{
+        display: none !important;
+    }
+    header .menu{
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 25px;
+    }
+    /* navbor */
+    .navbor{
+        position: fixed !important;
+        height: 100%;
+        width: 50%;
+        padding: 0;
+        transform: translateX(-101%);
+        transition: transform 0.5s ease;
+    }
+    .navbor nav{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly !important;
+    }
+    .navbor nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly !important;
+        height: 50%;
+    }
+    .navbor nav li a{
+        size: 16px;
+    }
+    .navbor nav button{
+        width: 50%;
+        height: 40px;
+    }
+    /* intro */
+    .intro{
+        background-position: center;
+    }
+    .intro .shadow{
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .intro button{
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+
+    }
+    .resnet-project .cards{
+        width: 100%;
+    }
+    .main-services .buttons button{
+        width: 30px;
+    }
+    .our-services .body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+    }
+    .customer .client .icon img{
+        width: 70px;
+    }
+
+    /* main-services */
+    .main-services .header{
+        width: 100% !important;
+    }
+    .main-services .header .buttons button{
+        width: 32%;
+        box-sizing: border-box;
+        font-size: 12px;
+        padding: 0;
+    }
+    .main-services .body .body-card{
+        flex-direction: column;
+        height: auto;
+    }
+    .main-services .body .body-card .left{
+        width: 100%;
+        align-items: center !important;
+    }
+    .main-services .body .body-card .left .shadow{
+        align-self: center;
+    }
+    .main-services .body .body-card .left button{
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .main-services .body .body-card .right{
+        width: 100%;
+    }
+    /* our-services */
+    .our-services{
+        margin-top: 350px;
+    }
+    .our-services .container{
+        flex-direction: column;
+    }
+    .our-services .container .header{
+        width: 100% !important;
+        height: auto;
+    }
+    .our-services .container .our-services-card{
+        height: auto;
+        padding: 10px;
+    }
+    .our-services .container .our-services-card .icon img{
+        width: 25px;
+    }
+    .our-services .container .our-services-card h5{
+        font-size: 18px;
+    }
+
+    /* choose-us */
+    .choose-us {
+        height: auto;
+    }
+    .choose-us .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .choose-us .header,.choose-us .body{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .choose-us .title{
+        font-size: 18px;
+    }
+
+    /* resnet-project */
+    .resnet-project{
+        padding: 20px 0;
+        margin-top: 100px !important;
+        height: auto;
+    }
+    .resnet-project .header,.resnet-project .cards{
+        width: 100% !important;
+    }
+    .resnet-project .cards .row{
+        height: auto;
+        flex-wrap: wrap;
+        --bs-gutter-x:0;
+    }
+    .resnet-project .cards .col{
+        width: 45%;
+        flex: none;
+        margin: 5px;
+    }
+    .resnet-project .card .title{
+        font-size: 14px;
+    }
+    .resnet-project .card .main{
+        font-size: 12px;
+    }
+    /* customer */
+    .customer .network{
+        flex-direction: column !important;
+    }
+    .customer .network .testimonial,.customer .network .meet{
+        width: 100% !important;
+    }
+    .customer .network .meet{
+        padding: 0px !important;
+    }
+    /* BlueCollor */
+
+
+    .BlueCollor{
+        height: auto;
+        margin-top: 20px;
+    }
+    .BlueCollor .main{
+        flex-direction: column;
+    }
+    .BlueCollor .main .left,.BlueCollor .main .right{
+        justify-content: center;
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    .BlueCollor .main .left img{
+        width: 50% !important;
+    }
+    .BlueCollor .main .right{
+        padding: 0 !important;
+    }
+    .BlueCollor .main .right .shadow{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    
+
+    /* price */
+
+    .price .header{
+        width: 100%;
+    }
+    .price .header .left{
+        justify-content: space-evenly;
+        width: 40% !important;
+    }
+    .price .header .right{
+        width: 55% !important;
+    }
+    .price .cards{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly !Important;
+    }
+    .price .cards .card{
+        width: 45%;
+        margin: 5px;
+    }
+    /* update */
+    .update .worker-info{
+        width: 90%;
+        padding: 0px;
+        font-size: 12px;
+    }
+    .update .worker-info > div{
+        align-items: center;
+    }
+
+    /* subscribe */
+
+    .subscribe .container{
+        flex-direction: column;
+        height: auto;
+    }
+    .subscribe .container .left{
+        width: 100%;
+    }
+    .subscribe .container h3, .subscribe .container p{
+        text-align: center;
+    }
+    .subscribe .container .right{
+        margin-top: 20px;
+        width: 100% !important;
+    }
+
+
+    /* footer */
+    footer .container{
+        padding: 1em !important;
+    }
+    footer .header{
+        flex-wrap: wrap;
+    }
+    footer .header li{
+        width: 50%;
+        margin: 5px 0px;
+        justify-content: start !important;
+    }
+    footer .header li h5{
+        font-size: 14px;
+        margin: 0;
+    }
+    footer .header li p{
+        font-size: 12px;
+    }
+    footer .header li .circle{
+        width: 30px;
+        height: 30px;
+    }
+    footer .header li .circle img{
+        width: 18px;
+    }
+    footer .row .col-4{
+        width: 50%;
+    }
+    footer .row .col-4 li{
+        font-size: 14px;
+    }
+    footer .main .left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .main .left > p{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    footer .main .left .massanger{
+        position: relative;
+    }
+    footer .main .left .massanger .circle{
+        width: 30px;
+        height: 30px;
+    }
+}
